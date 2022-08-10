@@ -3,12 +3,10 @@
 set -e
 
 WORK_DIR="/tmp/lambda-pkg-$(date +%s)"
-DEPS_DIR="${WORK_DIR}/depends"
 DIST_DIR="${WORK_DIR}/dists"
 OUT_DIR=$(pwd)/terraform
 
 mkdir $WORK_DIR
-mkdir $DEPS_DIR
 mkdir $DIST_DIR
 
 pipenv lock -r > requirements.txt

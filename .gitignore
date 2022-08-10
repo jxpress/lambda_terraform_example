@@ -35,3 +35,5 @@ terraform.rc
 
 dists.zip
 .python-version
+
+requirements.txt
